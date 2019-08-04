@@ -29,23 +29,29 @@ Applying the following supervised learning techniques, and see which
 one yields the highest accuracy as measured with K-Fold cross validation (K=10).
 
   (1) Decision tree
+  
         • Create a single train/test split of the data. Set aside 75% for training, and 25% for
           testing. Create a DecisionTreeClassifier and fit it to the training data. Measure the
           accuracy of the resulting decision tree model using the test data.
+          
         • Use K-Fold cross validation to get a measure of your model’s accuracy (K=10). 
         
   (2) Random forest
+  
         • Create a RandomForestClassifier using n_estimators=10 and use K-Fold cross validation
           to get a measure of the accuracy (K=10).
 
   (3) KNN
+  
         • Create a neighbors.KNeighborsClassifier and use K-Fold cross validation to get a
           measure of the accuracy (K=10).
+          
         • Try different values of K. Write a for loop to run KNN with K values ranging from 1 to
           50 and see if K makes a substantial difference. Make a note of the best performance you
           could get out of KNN.
           
   (4) Naive Bayes
+  
         • Create a naïve_bayes.MultinomailNB and use K-Fold cross validation to get a measure of
           the accuracy (K=10).
   
